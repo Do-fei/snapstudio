@@ -46,7 +46,7 @@ export function ProductCard({ product }: ProductCardProps) {
             {product.rating_count > 0 && (
               <div className="flex items-center gap-1 text-sm">
                 <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                <span>{product.rating_score.toFixed(1)}</span>
+                <span>{(product.rating_score || 0).toFixed(1)}</span>
                 <span className="text-muted-foreground">
                   ({product.rating_count})
                 </span>
