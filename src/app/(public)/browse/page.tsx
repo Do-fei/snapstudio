@@ -34,7 +34,7 @@ export default async function BrowsePage({ searchParams }: BrowsePageProps) {
     slug: string;
     price: number;
     cover_image: string | null;
-    rating_score?: number;
+    rating_score?: number | null;
     avg_rating?: number;
     rating_count: number;
     profiles: { display_name: string | null } | null;
